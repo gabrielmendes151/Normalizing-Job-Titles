@@ -14,8 +14,8 @@ class NormalizingJobTitlesTest {
     private final Normaliser normaliser = new NormaliserDynamicProgrammingService();
 
     @Test
-    public void shouldReturnQuantitySurveyorGivenJavareInput() {
-        String search = "javare";
+    public void shouldReturnQuantitySurveyorGivenQuantitiesSuInput() {
+        String search = "quantities su";
         String expected = "Quantity surveyor";
         String actual = normaliser.normalise(search);
 
@@ -23,8 +23,8 @@ class NormalizingJobTitlesTest {
     }
 
     @Test
-    public void shouldReturnAccountantGivenCInput() {
-        String search = "C";
+    public void shouldReturnAccountantGivenACcoInput() {
+        String search = "ACco";
         String expected = "Accountant";
         String actual = normaliser.normalise(search);
 

@@ -20,7 +20,7 @@ public class NormaliserDynamicProgrammingService implements Normaliser {
                 float currentDistance = getMinimumDistance(input, job);
                 currentDistance = currentDistance / job.length();
 
-                if (currentDistance <= distance) {
+                if (currentDistance < distance) {
                     distance = currentDistance;
                     result = job;
                 }
